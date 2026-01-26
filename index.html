@@ -1,866 +1,1232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-  <title>Monish Roy - Software Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monish Roy | Software Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Monish Roy, a professional Software Developer specializing in full-stack development.">
+    <meta name="keywords"
+        content="Monish Roy, Laravel Developer, PHP Expert, Full Stack Web Developer, Custom ERP Software, HRM Solutions, Freelance Web Developer, Hire Laravel Developer, Bangladeshi PHP Developer, Backend Specialist, API Development, Experienced Programmer, Portfolio Monish Roy">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-  <meta name="title" content="Monish Roy - Software Developer">
-  <meta name="description"
-    content="Monish Roy – A skilled Laravel and PHP web developer creating high-performance, secure, and user-friendly web applications. Explore my projects and services at MonishRoy.com.">
-  <meta name="keywords"
-    content="monishroy, monish, monish roy, laravel developer, php developer, portfolio monishroy, portfolio website, web developer, developer, freelancer, bangladeshi php developer, experience developer, hrm, erp software">
-  <link rel="canonical" href="https://monishroy.com/">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://monishroy.com/">
 
-  <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow">
 
-  <meta name="author" content="Monish Roy">
-  <meta name="publisher" content="Monish Roy">
+    <meta name="author" content="Monish Roy">
+    <meta name="publisher" content="Monish Roy">
 
-  <meta property="og:title" content="Monish Roy - Software Developer">
-  <meta property="og:description"
-    content="Official portfolio website of Monish Roy, a skilled Software Developer specializing in PHP and Laravel. Explore his projects, services, and contact information.">
-  <meta property="og:image" content="assets/images/home-page.png">
-  <meta property="og:url" content="https://monishroy.com/">
-  <meta property="og:site_name" content="Monish Roy">
-  <meta property="og:type" content="website">
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="assets/images/home-page.png">
-  <meta name="twitter:site" content="@monishroy010">
-  <meta name="twitter:creator" content="@monishroy010">
-  <meta name="twitter:title" content="Monish Roy - Software Developer">
-  <meta name="twitter:description"
-    content="Official portfolio website of Monish Roy, a skilled Software Developer specializing in PHP and Laravel. Explore his projects, services, and contact information.">
-  <link rel="image_src" href="https://monishroy.com/assets/images/home-page.png" />
+    <meta property="og:title" content="Monish Roy - Software Developer">
+    <meta property="og:description"
+        content="Portfolio of Monish Roy, a professional Software Developer specializing in full-stack development.">
+    <meta property="og:image" content="assets/images/home-page.jpg">
+    <meta property="og:url" content="https://monishroy.com/">
+    <meta property="og:site_name" content="Monish Roy">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="assets/images/home-page.jpg">
+    <meta name="twitter:site" content="@monishroy010">
+    <meta name="twitter:creator" content="@monishroy010">
+    <meta name="twitter:title" content="Monish Roy - Software Developer">
+    <meta name="twitter:description"
+        content="Portfolio of Monish Roy, a professional Software Developer specializing in full-stack development.">
+    <link rel="image_src" href="https://monishroy.com/assets/images/home-page.jpg" />
 
-  <!--- favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Monish Roy" />
-  <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <!--- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Monish Roy" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
 
-  <!--- custom css link-->
-  <link rel="stylesheet" href="assets/css/style.min.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5KYWHWLWB0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  <!--- google font link-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5KYWHWLWB0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+        gtag('config', 'G-5KYWHWLWB0');
+    </script>
 
-    gtag('config', 'G-5KYWHWLWB0');
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Monish Roy – Portfolio",
-    "url": "https://monishroy.com/",
-    "alternateName": "Monish Roy Official Website",
-    "description": "Official portfolio website of Monish Roy, a skilled Software Developer specializing in PHP and Laravel. Explore his projects, services, and contact information.",
-    "image": [
-      "https://monishroy.com/assets/images/monishroy.webp",
-      "https://monishroy.com/assets/images/monishroy.jpg"
-    ],
-    "publisher": {
-      "@type": "Person",
-      "name": "Monish Roy",
-      "url": "https://monishroy.com/",
-      "sameAs": [
-          "https://twitter.com/monishroy010",
-          "https://www.facebook.com/monishroy010",
-          "https://www.linkedin.com/in/monishroy010",
-          "https://www.instagram.com/monishroy010",
-          "https://www.youtube.com/@monishroyprogrammer",
-          "https://github.com/monishroy"
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://monishroy.com/#person",
+          "name": "Monish Roy",
+          "jobTitle": "Software Developer",
+          "description": "Monish Roy is a skilled Software Developer specializing in PHP and Laravel development.",
+          "url": "https://monishroy.com/",
+          "image": "https://monishroy.com/assets/images/monishroy.jpg",
+          "sameAs": [
+            "https://twitter.com/monishroy010",
+            "https://www.facebook.com/monishroy010",
+            "https://www.linkedin.com/in/monishroy010",
+            "https://www.instagram.com/monishroy010",
+            "https://www.youtube.com/@monishroyprogrammer",
+            "https://github.com/monishroy"
+          ],
+          "knowsAbout": ["PHP", "Laravel", "Web Development", "Software Engineering", "API Integration"],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Northern University Bangladesh"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://monishroy.com/#website",
+          "url": "https://monishroy.com/",
+          "name": "Monish Roy – Software Developer",
+          "publisher": { "@id": "https://monishroy.com/#person" },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://monishroy.com/#webpage",
+          "url": "https://monishroy.com/",
+          "name": "Monish Roy Portfolio",
+          "isPartOf": { "@id": "https://monishroy.com/#website" },
+          "about": { "@id": "https://monishroy.com/#person" },
+          "description": "Official portfolio of Monish Roy, featuring expert PHP and Laravel development projects and services."
+        }
       ]
-    },
-    "inLanguage": "en",
-  }
-  </script>
+    }
+    </script>
 
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MVSVCT2S');</script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MVSVCT2S');
+    </script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        },
+                        dark: {
+                            800: '#1f2937',
+                            900: '#111827',
+                            950: '#030712',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Custom Utilities */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .dark .glass-nav {
+            background: rgba(17, 24, 39, 0.8);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(40px);
+            z-index: -1;
+            opacity: 0.4;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: #334155;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+
+        @keyframes float {
+            0% {
+                transform: translate(0px, 0px) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -50px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
+
+            100% {
+                transform: translate(0px, 0px) scale(1);
+            }
+        }
+    </style>
 </head>
 
-<body>
-  <!--- #MAIN-->
+<body class="bg-gray-50 text-gray-900 dark:bg-dark-950 dark:text-gray-100 transition-colors duration-300">
 
-  <main>
-    <!--- #SIDEBAR -->
+    <!-- Navbar -->
+    <nav
+        class="fixed w-full z-50 glass-nav border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#"
+                        class="font-heading font-bold text-2xl tracking-tighter hover:text-primary-600 transition-colors">
+                        MONISH ROY<span class="text-primary-600">.com</span>
+                    </a>
+                </div>
 
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <picture class="avatar-box">
-          <source srcset="assets/images/monishroy.webp" type="image/webp">
-          <img src="assets/images/monishroy.jpg" alt="Monish Roy - Software Developer" title="Monish Roy" width="80"
-            style="border-radius:15px;" decoding="async" fetchpriority="high" />
-        </picture>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home"
+                        class="text-sm font-medium hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Home</a>
+                    <a href="#about"
+                        class="text-sm font-medium hover:text-primary-600 dark:hover:text-primary-500 transition-colors">About</a>
+                    <a href="#projects"
+                        class="text-sm font-medium hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Projects</a>
+                    <a href="#experience"
+                        class="text-sm font-medium hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Experience</a>
+                    <a href="#contact"
+                        class="text-sm font-medium hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Contact</a>
 
-        <div class="info-content">
-          <h1 class="name">Monish Roy</h1>
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none">
+                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                        <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
+                    </button>
 
-          <p class="title">Software Developer</p>
+                    <a href="#contact"
+                        class="px-5 py-2.5 rounded-full bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium transition-all shadow-lg shadow-primary-500/30">
+                        Hire Me
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <button id="theme-toggle-mobile"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none">
+                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                        <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 dark:text-white focus:outline-none">
+                        <i id="mobile-menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-dark-900 border-t border-gray-200 dark:border-gray-800">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#home"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+                <a href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+                <a href="#projects"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+                <a href="#experience"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">Experience</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:monishroydev@gmail.com" title="Monish Roy Email : monishroydev@gmail.com"
-                class="contact-link">monishroydev@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+8801580487212" title="Monish Roy Phone No : +8801580487212"
-                class="contact-link">+8801580487212</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2002-08-11">August 11, 2002</time>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Dhaka, Bangladesh</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.facebook.com/monishroy010" target="_blank" title="Monish Roy Facebook"
-              class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/monishroy010/" target="_blank" title="Monish Roy Linkedin"
-              class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/monishroy" target="_blank" title="Monish Roy Github" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://x.com/monishroy010" target="_blank" title="Monish Roy Twitter" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/monishroy010/" title="Monish Roy Instagram" target="_blank"
-              class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <!--<li class="navbar-item">-->
-          <!--  <button class="navbar-link" data-nav-link>Blog</button>-->
-          <!--</li>-->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hi, I'm Monish Roy, a passionate Laravel and PHP web developer
-            dedicated to crafting high-performance, secure, and user-friendly
-            web applications. With expertise in Laravel, PHP, MySQL, and
-            JavaScript, I turn ideas into functional and efficient digital
-            solutions.
-          </p>
-
-          <p>
-            I love solving complex problems and staying updated with the
-            latest technologies to build innovative and scalable applications.
-            Let’s create something amazing together!
-          </p>
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="assets/images/design.png" alt="design icon" loading="lazy" title="Web Design" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a
-                  professional level.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="assets/images/development.png" loading="lazy" alt="Web development icon"
-                  title="Web Develoment" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/ayub.webp" loading="lazy" alt="Mr Ayub Islam" width="60" title="Ayub Ali"
-                    data-testimonials-avatar />
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Mr. Ayub Ali
-                  <p style="font-size: 10px;">Sr. Software Developer</p>
-                </h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Exceptional Work!"
-                    "Working with Monish Roy was a fantastic experience! Their expertise in Laravel and PHP helped bring
-                    our project to
-                    life with clean, efficient, and scalable code. Highly recommended!"
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/sagor.webp" loading="lazy" alt="Mr. Sagor Islam" width="60"
-                    title="Sagor Islam" data-testimonials-avatar />
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Mr. Sagor Islam
-                  <p style="font-size: 10px;">Sr. Software Developer</p>
-                </h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Reliable and Skilled Developer"
-                    "Monish Roy is a highly skilled developer who delivered our project on time and exceeded
-                    expectations. Their
-                    problem-solving skills and attention to detail are truly impressive!"
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/najmul.webp" loading="lazy" alt="Mr. Najmul Islam" width="60"
-                    title="Najmul Islam" data-testimonials-avatar />
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Mr. Najmul Islam
-                  <p style="font-size: 10px;">Sr. Software Developer</p>
-                </h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Great Communication and Expertise"
-                    "From start to finish, Monish Roy demonstrated great professionalism and technical expertise. They
-                    understood our
-                    requirements perfectly and built a seamless web application. Will definitely work together again!"
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/pavel.webp" loading="lazy" alt="Mr. Pavel Islam" width="60"
-                    title="Pavel Islam" data-testimonials-avatar />
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Mr. Pavel Islam
-                  <p style="font-size: 10px;" title="Software Quality Assurance">SQA</p>
-                </h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I worked with Monish Roy at Smart Software Limited, where he was a Jr. Software Developer. He is a
-                    talented and hardworking developer with a strong foundation in PHP and Laravel.
-                    <br><br>
-                    Monish is a quick learner who adapts well to challenges and consistently delivers quality work. His
-                    problem-solving skills and dedication make him a promising developer in the field. I highly
-                    recommend him for any team looking for a skilled and motivated Laravel developer.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/arafat.webp" loading="lazy" alt="Mr. Arafat Sorkar" width="60"
-                    title="Arafat Sorkar" data-testimonials-avatar />
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Mr. Arafat Sorkar
-                  <p style="font-size: 10px;">Sr. Software Developer</p>
-                </h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    My colleague is a skilled and collaborative software developer. His passion for work and expertise
-                    in real-world projects has helped me learn a lot. He is always supportive of the team and is an
-                    essential part of a strong team. Working with him is truly enjoyable
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="assets/images/ayub.webp" loading="lazy" alt="Ayub Ali" title="Ayub Ali"
-                  style="border-radius: 10px;" width="80" data-modal-img />
-              </figure>
-
-              <img src="assets/images/icon-quote.svg" loading="lazy" alt="quote icon" title="Image Testimonial" />
-            </div>
-
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Mr. Ayub Ali</h4>
-
-              <time datetime="2025-03-09">09 March, 2025</time>
-
-              <div data-modal-text>
-                <p>
-                  "Exceptional Work!"
-                  "Working with Monish Roy was a fantastic experience! Their expertise in Laravel and PHP helped bring
-                  our project to
-                  life with clean, efficient, and scalable code. Highly recommended!"
-                </p>
-              </div>
-            </div>
-          </section>
         </div>
-      </article>
+    </nav>
 
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Blobs -->
+        <div
+            class="blob bg-blue-400 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2 blur-3xl opacity-20 dark:opacity-10">
+        </div>
+        <div
+            class="blob bg-purple-400 w-96 h-96 rounded-full bottom-0 right-0 translate-x-1/3 translate-y-1/3 blur-3xl opacity-20 dark:opacity-10">
+        </div>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center px-3 py-1 rounded-full border border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-sm font-medium mb-6">
+                        <span class="flex h-2 w-2 rounded-full bg-green-600 mr-2 animate-pulse"></span>
+                        Available for work
+                    </div>
+                    <h1
+                        class="text-4xl sm:text-5xl lg:text-7xl font-heading font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
+                        Hi, I'm <span class="gradient-text">Monish Roy</span>
+                        <br>Software Developer.
+                    </h1>
+                    <p
+                        class="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                        I build accessible, pixel-perfect, performant, and responsive web applications. Passionate about
+                        turning complex problems into simple, beautiful, and intuitive designs.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#projects"
+                            class="inline-flex justify-center items-center px-8 py-3.5 border border-transparent text-base font-medium rounded-full text-white bg-primary-600 hover:bg-primary-700 transition-all shadow-lg hover:shadow-primary-500/40">
+                            View My Work
+                            <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                        <a href="#contact"
+                            class="inline-flex justify-center items-center px-8 py-3.5 border border-gray-300 dark:border-gray-700 text-base font-medium rounded-full text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div
+                        class="mt-10 flex items-center justify-center lg:justify-start gap-6 text-gray-500 dark:text-gray-400">
+                        <a href="https://github.com/monishroy" target="_blank" title="Go to Github Profile"
+                            class="hover:text-primary-600 transition-colors"><i data-lucide="github"
+                                class="w-6 h-6"></i></a>
+                        <a href="https://www.linkedin.com/in/monishroy010/" target="_blank" title="Go to Linkedin Profile"
+                            class="hover:text-primary-600 transition-colors"><i data-lucide="linkedin"
+                                class="w-6 h-6"></i></a>
+                        <a href="https://twitter.com/monishroy010" target="_blank" title="Go to Twitter Profile (X)"
+                            class="hover:text-primary-600 transition-colors"><i data-lucide="twitter"
+                                class="w-6 h-6"></i></a>
+                        <a href="https://www.instagram.com/monishroy010/" target="_blank" title="Go to Instagram Profile"
+                            class="hover:text-primary-600 transition-colors"><i data-lucide="instagram"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 mt-12 lg:mt-0 relative">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 group">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-primary-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+                        </div>
+                        <img src="assets/images/monishroy.jpg" alt="Monish Roy" title="Monish Roy Profile Picture"
+                            class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Stats Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 animate-bounce"
+                        style="animation-duration: 3s;">
+                        <div class="flex items-center gap-3">
+                            <div class="p-3 bg-primary-100 dark:bg-primary-900/50 rounded-lg text-primary-600">
+                                <i data-lucide="code-2" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Experience</p>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white">2+ Years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-dark-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+                <div class="w-20 h-1.5 bg-primary-600 mx-auto rounded-full"></div>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">I'm a passionate developer based
+                        in Bangladesh</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Hi, I’m Monish Roy, a PHP and Laravel web developer focused on building secure, scalable, and
+                        high-performance web
+                        applications. I help businesses and individuals turn ideas into reliable digital solutions using
+                        clean code, optimized
+                        architecture, and proven development practices.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        I specialize in Laravel, core PHP, MySQL, and JavaScript, creating robust backend systems and
+                        dynamic web applications.
+                        I enjoy solving complex problems, staying up to date with modern web technologies, and
+                        continuously improving my skills
+                        through learning and open-source contributions.
+                    </p>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                PHP Laravel Web Development Course
-              </h4>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-4xl font-bold text-primary-600 mb-1">10+</h4>
+                            <p class="text-gray-500 dark:text-gray-400">Projects Completed</p>
+                        </div>
+                        <div>
+                            <h4 class="text-4xl font-bold text-primary-600 mb-1">6+</h4>
+                            <p class="text-gray-500 dark:text-gray-400">Happy Clients</p>
+                        </div>
+                    </div>
 
-              <span>Oct, 2023 — Dec, 2023</span>
+                    <div class="mt-8">
+                        <a href="assets/documents/Monish-CV.pdf" download title="Monish Roy CV Download"
+                            class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary-600 hover:bg-primary-700 transition-all shadow-lg hover:shadow-primary-500/40">
+                            Download CV
+                            <i data-lucide="download"
+                                class="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute top-4 -right-4 w-full h-full border-2 border-primary-600 rounded-2xl z-0">
+                        </div>
+                        <img src="assets/images/about-monish.jpg" alt="About Monish Roy" title="About Monish Roy"
+                            class="relative rounded-2xl shadow-xl z-10 w-full object-cover h-[500px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-              <p class="timeline-text">
-                Gained hands-on experience in building dynamic web applications using Laravel, PHP, MySQL, and AJAX.
-                Developed expertise
-                in MVC architecture, authentication, RESTful APIs, and real-time data updates.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Diploma in Computer Engineering</h4>
-
-              <span>May, 2019 — Dec, 2023</span>
-
-              <p class="timeline-text">
-                Studied core computer engineering concepts, including programming, database management, networking, and
-                software
-                development. Worked on projects involving web development.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Purba Saptana High School
-              </h4>
-
-              <span>Jun, 2014 — Mar, 2019</span>
-
-              <p class="timeline-text">
-                Completed secondary education with a strong foundation in mathematics, science, and computer studies.
-                Developed
-                problem-solving and analytical skills essential for technology-driven fields.
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-dark-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold tracking-wide uppercase text-sm">My Arsenal</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mt-2">Technical
+                    Skills</h2>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div
+                    class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+                    <div
+                        class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center text-blue-600 mb-6">
+                        <i data-lucide="layout" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">HTML5</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">CSS3</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">JavaScript</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Bootstrap
+                            5</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">jQuery</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Tailwind
+                            CSS</span>
+                    </div>
+                </div>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Developer - Smart Software LTD</h4>
+                <!-- Backend -->
+                <div
+                    class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+                    <div
+                        class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center text-green-600 mb-6">
+                        <i data-lucide="server" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">PHP</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Laravel</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">mySQL</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Python</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">SQL
+                            Lite</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">API</span>
+                    </div>
+                </div>
 
-              <span>Jan, 2024 — Present</span>
-
-              <p class="timeline-text">
-                Working as a web developer specializing in PHP, Laravel, and MySQL. Responsible for designing and
-                developing web
-                applications, optimizing performance, and implementing interactive features using AJAX. Collaborating
-                with teams to
-                create scalable and efficient software solutions.
-              </p>
-            </li>
-
-          </ol>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">HTML</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">CSS</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Bootstrap</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Tailwind</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Javascript</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">PHP</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Laravel</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Vue JS</h5>
-                <data value="40">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Next JS</h5>
-                <data value="30">30%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>
-                Select category
-              </div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://www.hrmsoftwarebd.com/" target="_blank" title="HRM - Human Resource Management">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/hrm-dashboard.webp" alt="HRM - Human Resource Management"
-                    title="HRM - Human Resource Management" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">HRM</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#" target="_blank" title="Sales Force ERP">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/sf-dashboard.webp" alt="Sales Force" title="Sales Force" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">SalesForce ERP</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development, web design">
-              <a href="https://codetap.org" target="_blank" title="CodeTap Website">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/codetap.webp" alt="Sales Force" title="Sales Force" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">CodeTap Website</h3>
-
-                <p class="project-category">Web Design and development</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development, web design, web app">
-              <a href="https://messman.codetap.org" target="_blank" title="Messman">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/messman.webp" alt="Messman" title="Messman" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Messman</h3>
-
-                <p class="project-category">Web App</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.082849869034!2d90.36196944855703!3d23.799338814548065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c51f7df1c9%3A0xfd8b3a8bc2d47be9!2sMonipur%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1741286415052!5m2!1sen!2sbd"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form class="form" id="contactForm" method="POST">
-            <div class="input-wrapper">
-              <input type="text" name="name" id="name" class="form-input" placeholder="Full name" required />
-              <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required />
+                <!-- Tools -->
+                <div
+                    class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+                    <div
+                        class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center text-purple-600 mb-6">
+                        <i data-lucide="wrench" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Tools & Others</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Git</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">GitHub</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">VS
+                            Code</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Docker</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">Server
+                            Management</span>
+                        <span
+                            class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm">VPS</span>
+                    </div>
+                </div>
             </div>
-            <textarea name="message" class="form-input" id="message" placeholder="Your Message" required></textarea>
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span id="button-message">Send Message</span>
-            </button>
-          </form>
-        </section>
+        </div>
+    </section>
 
-      </article>
-    </div>
-  </main>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-dark-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12 text-center md:text-left">
+                <div>
+                    <span class="text-primary-600 font-semibold tracking-wide uppercase text-sm">
+                        Portfolio
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mt-2">
+                        Recent Projects
+                    </h2>
+                </div>
 
-  <!--- custom js link -->
-  <script src="assets/js/script.min.js"></script>
+                <a href="#"
+                    class="inline-flex items-center justify-center md:justify-start text-primary-600 font-medium hover:text-primary-700 mt-4 md:mt-0">
+                    View all projects
+                    <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
 
-  <!--- ionicon link-->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#contactForm").submit(function (event) {
-        event.preventDefault(); // Prevent page reload
 
-        // Collect form data
-        var formData = {
-          name: $("#name").val(),
-          email: $("#email").val(),
-          message: $("#message").val(),
-        };
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div
+                    class="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-50">
+                        <img src="assets/images/hrm-dashboard.webp" alt="HRM Dashboard" title="HRM Dashboard"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <a href="https://www.hrmsoftwarebd.com/" target="_blank"
+                                title="HRM - Human Resource Management"
+                                class="p-2 rounded-full bg-white text-dark 
+                                    dark:bg-gray-900 dark:text-white 
+                                    hover:bg-primary-600 hover:text-white transition-colors"><i
+                                    data-lucide="external-link" class="w-5 text-dark h-5"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">HRM</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Contributed to an HRM system by fixing
+                            bugs, enhancing features, and improving performance for smoother operations.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">PHP</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300">Laravel</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">Bootstrap
+                                5</span>
 
-        $.ajax({
-          url: "https://admin.monishroy.com/api/contact",
-          type: "POST",
-          data: formData,
-          success: function (response) {
-            $('#button-message').text('Sended');
-            $("#contactForm")[0].reset();
-          },
-          error: function (xhr, status, error) {
-            alert("Error: " + xhr.responseJSON.error); // Show error message
-          }
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div
+                    class="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-50">
+                        <img src="assets/images/sf-dashboard.webp" alt="SalesForce ERP Dashboard"
+                            title="SalesForce ERP Dashboard"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <a href="#" title="SalesForce ERP" class="p-2 rounded-full bg-white text-dark 
+                                    dark:bg-gray-900 dark:text-white 
+                                    hover:bg-primary-600 hover:text-white transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">SalesForce ERP</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Developed an all-in-one Salesforce
+                            Management System integrating sales, inventory, distribution, and customer
+                            management.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">PHP</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300">Laravel</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">Bootstrap
+                                5</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div
+                    class="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-50">
+                        <img src="assets/images/codetap.webp" alt="CodeTap - Online Tools" title="CodeTap - Online Tools & JS Projects"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <a href="https://codetap.org/" target="_blank" title="CodeTap - Online Tools"
+                                class="p-2 rounded-full bg-white text-dark 
+                                    dark:bg-gray-900 dark:text-white 
+                                    hover:bg-primary-600 hover:text-white transition-colors"><i data-lucide="external-link"
+                                    class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">CodeTap - Online Tools</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">CodeTap.org lets developers and
+                            learners showcase, share, download, and preview modern web projects.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">PHP</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300">Laravel</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">Bootstrap
+                                5</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">Vue</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 text-center md:hidden">
+                <a href="#" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700">
+                    View all projects <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Timeline) -->
+    <section id="experience" class="py-20 bg-gray-50 dark:bg-dark-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 ">
+                <h2 class="text-primary-500 font-semibold tracking-wide uppercase text-sm mb-2">Career Path</h2>
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-dark dark:text-white">Work Experience</h3>
+            </div>
+
+            <div class="relative timeline-line max-w-4xl mx-auto">
+
+                <!-- Experience Item 1 (Right) -->
+                <div class="relative pl-12 md:pl-0 md:flex md:justify-between md:items-center mb-12 group ">
+                    <!-- Dot -->
+                    <div
+                        class="absolute left-[11px] md:left-1/2 top-0 w-5 h-5 bg-dark-900 border-4 border-primary-500 rounded-full md:-translate-x-1/2 z-10 group-hover:scale-125 transition-transform duration-300">
+                    </div>
+
+                    <!-- Date (Left on Desktop) -->
+                    <div class="md:w-[45%] md:text-right md:pr-12 mb-2 md:mb-0">
+                        <span
+                            class="inline-block px-3 py-1 dark:bg-slate-800 bg-white rounded-full text-sm text-primary-400 font-mono border border-gray-200 dark:border-slate-700">Jan,
+                            2024
+                            - Present</span>
+                    </div>
+
+                    <!-- Content (Right on Desktop) -->
+                    <div class="md:w-[45%] md:pl-12">
+                        <div
+                            class="bg-white dark:bg-dark-900 p-6 rounded-2xl border border-gray-100 dark:border-slate-700 dark:hover:border-primary-500/50 transition-colors shadow-lg hover:shadow-primary-500/10">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Software Engineer</h4>
+                            <p class="text-blue-500 font-medium mb-3">Smart Software LTD.</p>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Software Developer at Smart Software LTD, specializing in ERP systems, Salesforce
+                                integration, and inventory solutions to improve business efficiency.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="text-xs px-2 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 rounded">Advance
+                                    Laravel</span>
+                                <span
+                                    class="text-xs px-2 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 rounded">API</span>
+                                <span
+                                    class="text-xs px-2 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 rounded">Server
+                                    Manage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 (Left) -->
+                <div
+                    class="relative pl-12 md:pl-0 md:flex md:flex-row-reverse md:justify-between md:items-center mb-12 group ">
+                    <!-- Dot -->
+                    <div
+                        class="absolute left-[11px] md:left-1/2 top-0 w-5 h-5 bg-dark-900 border-4 border-purple-500 rounded-full md:-translate-x-1/2 z-10 group-hover:scale-125 transition-transform duration-300">
+                    </div>
+
+                    <!-- Date (Right on Desktop) -->
+                    <div class="md:w-[45%] md:text-left md:pl-12 mb-2 md:mb-0">
+                        <span
+                            class="inline-block px-3 py-1 dark:bg-slate-800 bg-white rounded-full text-sm text-primary-400 font-mono border border-gray-200 dark:border-slate-700">2023
+                            - 3 Month</span>
+                    </div>
+
+                    <!-- Content (Left on Desktop) -->
+                    <div class="md:w-[45%] md:pr-12">
+                        <div
+                            class="bg-white dark:bg-dark-900 p-6 rounded-2xl border border-gray-100 dark:border-slate-700 dark:hover:border-purple-500/50 transition-colors shadow-lg hover:shadow-purple-500/10">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Internship</h4>
+                            <p class="text-gray-600 dark:text-purple-400 font-medium mb-3">European IT Institute</p>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Gained hands-on experience in web development and software fundamentals through
+                                real-world projects.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="text-xs px-2 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 rounded">PHP</span>
+                                <span
+                                    class="text-xs px-2 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 rounded">Laravel</span>
+                                <span
+                                    class="text-xs px-2 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 rounded">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white dark:bg-dark-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 ">
+                <h2 class="text-purple-500 font-semibold tracking-wide uppercase text-sm mb-2">Academic Background</h2>
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-dark dark:text-white">Education &
+                    Certifications</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Education Card 1 -->
+                <div
+                    class="bg-white dark:bg-dark-800 p-8 rounded-3xl border border-gray-200 dark:border-slate-700 hover:-translate-y-2 transition-transform duration-300 hover:shadow-2xl hover:shadow-purple-500/10 group ">
+                    <div class="flex justify-between items-start mb-6">
+                        <div
+                            class="p-3 bg-purple-500/10 rounded-xl text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                            <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+                        </div>
+                        <span
+                            class="px-3 py-1 bg-gray-300 dark:bg-slate-700 rounded-full text-xs font-mono text-gray-700 dark:text-slate-300">2025
+                            - 2028</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-dark dark:text-white mb-2">Bachelor of Computer Science</h4>
+                    <p class="text-purple-400 text-lg mb-4">Northern University Bangladesh</p>
+                    <p class="text-slate-400 mb-4">Specialized in Software Engineering and Artificial Intelligence.
+                        Focused on software development and IT fundamentals.
+                        Gained practical experience through projects and hands-on learning.</p>
+                    <ul class="space-y-2 text-slate-500 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-500"></i>
+                            Dean's List</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-500"></i>
+                            President of Coding Club</li>
+                    </ul>
+                </div>
+
+                <!-- Education Card 2 -->
+                <div
+                    class="bg-white dark:bg-dark-800 p-8 rounded-3xl border border-gray-200 dark:border-slate-700 hover:-translate-y-2 transition-transform duration-300 hover:shadow-2xl hover:shadow-primary-500/10 group ">
+                    <div class="flex justify-between items-start mb-6">
+                        <div
+                            class="p-3 bg-blue-500/10 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                            <i data-lucide="award" class="w-8 h-8"></i>
+                        </div>
+                        <span
+                            class="px-3 py-1 bg-gray-300 dark:bg-slate-700 rounded-full text-xs font-mono text-gray-700 dark:text-slate-300">2019
+                            - 2023</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-dark dark:text-white mb-2">Diploma in Computer Science</h4>
+                    <p class="text-blue-400 text-lg mb-4">Rangpur Ideal Institute of Technology</p>
+                    <p class="text-slate-400 mb-4">Diploma in Computer Science from Rangpur Ideal Institute of
+                        Technology, with hands-on experience in Laravel, PHP, MySQL,
+                        and web development.</p>
+                    <ul class="space-y-2 text-slate-500 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary-500"></i>
+                            Result : 3.78 up to 4.00 CGPA</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary-500"></i>
+                            Activities and societies: Software Development, Comunications
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Certification 1 -->
+                <div
+                    class="bg-white dark:bg-dark-800 p-6 rounded-2xl border border-gray-200 dark:border-slate-700 flex items-center gap-4 hover:border-slate-500 transition-colors ">
+                    <div class="p-3 bg-red-100 dark:bg-slate-700 rounded-full">
+                        <i data-lucide="cloud-lightning" class="w-6 h-6 text-red-400"></i>
+                    </div>
+                    <div>
+                        <h5 class="text-dark dark:text-white font-bold">Web Development with Laravel</h5>
+                        <p class="text-slate-400 text-sm">European IT Institute • 2023</p>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div
+                    class="bg-white dark:bg-dark-800 p-6 rounded-2xl border border-gray-200 dark:border-slate-700 flex items-center gap-4 hover:border-slate-500 transition-colors ">
+                    <div class="p-3 bg-blue-100 dark:bg-slate-700 rounded-full">
+                        <i data-lucide="layout" class="w-6 h-6 text-blue-400"></i>
+                    </div>
+                    <div>
+                        <h5 class="text-dark dark:text-white font-bold">Web Design and Development for Freelancing -
+                            Level 3</h5>
+                        <p class="text-slate-400 text-sm">National Skills Development Authority (NSDA) • 2024</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial/Experience Section -->
+    <section class="py-20 bg-primary-600 dark:bg-primary-900 text-white transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">What People Say</h2>
+                <p class="text-primary-100 max-w-2xl mx-auto">Feedback from clients and colleagues I've had the pleasure
+                    of working with.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-100 mb-6 italic">"Working with Monish Roy was a fantastic experience! Their
+                        expertise in Laravel and PHP helped bring our project to life with clean, efficient, and
+                        scalable code. Highly recommended!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/ayub.webp" alt="Client" title="Ayub Ali"
+                            class="w-10 h-10 rounded-full border-2 border-primary-400">
+                        <div>
+                            <h4 class="font-bold text-sm">Ayub Ali</h4>
+                            <p class="text-xs text-primary-200">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-100 mb-6 italic">"Great communication skills and technical expertise. He solved
+                        complex backend issues we were facing for weeks."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/arafat.webp" alt="Client" title="Arafat Islam"
+                            class="w-10 h-10 rounded-full border-2 border-primary-400">
+                        <div>
+                            <h4 class="font-bold text-sm">Arafat Islam</h4>
+                            <p class="text-xs text-primary-200">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-100 mb-6 italic">"Monish is a quick learner who adapts well to challenges and
+                        consistently delivers quality work. His
+                        problem-solving skills and dedication make him a promising developer in the field. I highly
+                        recommend him for any team looking for a skilled and motivated Laravel developer."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/pavel.webp" alt="Client" title="Pavel Islam"
+                            class="w-10 h-10 rounded-full border-2 border-primary-400">
+                        <div>
+                            <h4 class="font-bold text-sm">Mr. Pavel Islam</h4>
+                            <p class="text-xs text-primary-200">Founder, Web Xpress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-dark-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-24">
+                <div>
+                    <span class="text-primary-600 font-semibold tracking-wide uppercase text-sm">Get in Touch</span>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mt-2 mb-6">
+                        Let's talk about your project</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 text-lg">
+                        I'm currently available for freelance work and full-time opportunities. If you have a project
+                        that needs some creative touch, I'd love to hear about it.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm text-primary-600">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Email</h4>
+                                <a href="mailto:monishroydev@gmail.com" title="Email Send"
+                                    class="text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors">monishroydev@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm text-primary-600">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Location</h4>
+                                <p class="text-gray-600 dark:text-gray-400">Dhaka, Bangladesh (Remote Available)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm text-primary-600">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Phone</h4>
+                                <p class="text-gray-600 dark:text-gray-400">+8801580487212</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-800">
+                    <form action="javascript:void(0)" id="contactForm"
+                        class="space-y-6 bg-white dark:bg-gray-900 rounded-2xl shadow-xl">
+                    
+                        <!-- Success Message -->
+                        <div id="successMsg" class="hidden p-4 bg-green-100 text-green-700 rounded-xl font-semibold text-center">
+                            Message sent successfully!
+                        </div>
+                    
+                        <!-- Name & Email -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                    Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 focus:bg-white dark:focus:bg-gray-900 text-gray-900 dark:text-white transition"
+                                    placeholder="John Doe">
+                                <p id="error-name" class="text-red-500 text-sm mt-1 hidden"></p>
+                            </div>
+                    
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                    Email <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 focus:bg-white dark:focus:bg-gray-900 text-gray-900 dark:text-white transition"
+                                    placeholder="john@example.com">
+                                <p id="error-email" class="text-red-500 text-sm mt-1 hidden"></p>
+                            </div>
+                        </div>
+                    
+                        <!-- Subject -->
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                Subject <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="subject" name="subject"
+                                class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 focus:bg-white dark:focus:bg-gray-900 text-gray-900 dark:text-white transition"
+                                placeholder="Project Inquiry">
+                            <p id="error-subject" class="text-red-500 text-sm mt-1 hidden"></p>
+                        </div>
+                    
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                Message <span class="text-red-500">*</span>
+                            </label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 focus:bg-white dark:focus:bg-gray-900 text-gray-900 dark:text-white transition resize-none"
+                                placeholder="Tell me about your project..."></textarea>
+                            <p id="error-message" class="text-red-500 text-sm mt-1 hidden"></p>
+                        </div>
+                    
+                        <!-- Submit Button -->
+                        <button type="submit" id="submitBtn"
+                            class="flex items-center justify-center gap-2 w-full py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-primary-500/40 transform hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed">
+                    
+                            <span id="btnText">Send Message</span>
+                    
+                            <!-- Loader -->
+                            <svg id="btnLoader" class="hidden w-5 h-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                            </svg>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        class="bg-white dark:bg-dark-900 border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="#" class="font-heading font-bold text-2xl tracking-tighter text-gray-900 dark:text-white">
+                        MONISH ROY<span class="text-primary-600">.com</span>
+                    </a>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm">
+                        Building digital experiences with passion and precision.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+                        <li><a href="#home" class="hover:text-primary-600 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-primary-600 transition-colors">About</a></li>
+                        <li><a href="#projects" class="hover:text-primary-600 transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Socials</h4>
+                    <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+                        <li><a href="https://github.com/monishroy" target="_blank" title="Go to Github Profile"
+                                class="hover:text-primary-600 transition-colors">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/monishroy010/" target="_blank" title="Go to Linkedin Profile"
+                                class="hover:text-primary-600 transition-colors">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/monishroy010" target="_blank" title="Go to Twitter Profile"
+                                class="hover:text-primary-600 transition-colors">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/monishroy010/" target="_blank" title="Go to Instagram Profile"
+                                class="hover:text-primary-600 transition-colors">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+                        <li><a href="#" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                    &copy; <span id="year"></span> Monish Roy. All rights reserved.
+                </p>
+                <div class="flex space-x-4">
+                    <p class="text-xs text-gray-400">Designed & Built by Monish Roy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Footer Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+
+            // Toggle icon
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                mobileMenuIcon.setAttribute('data-lucide', 'menu-close');
+            }
+
+            // Re-run lucide to update icon
+            lucide.replace();
         });
-      });
-    });
-  </script>
 
 
+        // Dark Mode Logic
+        const themeToggleBtns = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
+        const htmlElement = document.documentElement;
 
+        // Check local storage or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        themeToggleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                htmlElement.classList.toggle('dark');
+
+                if (htmlElement.classList.contains('dark')) {
+                    localStorage.theme = 'dark';
+                } else {
+                    localStorage.theme = 'light';
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contactForm");
+            const btn = document.getElementById("submitBtn");
+            const btnText = document.getElementById("btnText");
+            const btnLoader = document.getElementById("btnLoader");
+            const successMsg = document.getElementById("successMsg");
+
+            function showError(id, message) {
+                const el = document.getElementById("error-" + id);
+                el.innerText = message;
+                el.classList.remove("hidden");
+            }
+
+            function clearErrors() {
+                ["name", "email", "subject", "message"].forEach(id => {
+                    const el = document.getElementById("error-" + id);
+                    el.innerText = "";
+                    el.classList.add("hidden");
+                });
+            }
+
+            function validateEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                clearErrors();
+                successMsg.classList.add("hidden");
+
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const subject = document.getElementById("subject").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                let hasError = false;
+
+                if (!name) { showError("name", "Name is required"); hasError = true; }
+                if (!email) { showError("email", "Email is required"); hasError = true; }
+                else if (!validateEmail(email)) { showError("email", "Invalid email address"); hasError = true; }
+                if (!subject) { showError("subject", "Subject is required"); hasError = true; }
+                if (!message) { showError("message", "Message is required"); hasError = true; }
+
+                if (hasError) return;
+
+                // Loading state
+                btn.disabled = true;
+                btnText.innerText = "Sending...";
+                btnLoader.classList.remove("hidden");
+
+                const data = new FormData(form);
+
+                fetch("https://admin.monishroy.com/api/contact", {
+                    method: "POST",
+                    body: data
+                })
+                .then(res => res.json())
+                .then(response => {
+                    if (response.errors) {
+                        // Laravel validation errors
+                        Object.keys(response.errors).forEach(key => {
+                            showError(key, response.errors[key][0]);
+                        });
+                    } else {
+                        successMsg.classList.remove("hidden");
+                        btnText.innerText = "Send";
+                        form.reset();
+                    }
+                })
+                .catch(() => {
+                    alert("Something went wrong!");
+                })
+                .finally(() => {
+                    btn.disabled = false;
+                    btnLoader.classList.add("hidden");
+                    setTimeout(() => btnText.innerText = "Send Message", 2000);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
