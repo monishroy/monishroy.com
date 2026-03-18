@@ -4,41 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monish Roy | Software Developer Portfolio</title>
+    <title>Monish Roy | PHP & Laravel Developer – Portfolio | monishroy.com</title>
     <meta name="description"
-        content="Portfolio of Monish Roy, a professional Software Developer specializing in full-stack development.">
+        content="Monish Roy is a professional PHP & Laravel Developer from Bangladesh, specializing in full-stack web development, custom ERP systems, HRM solutions, and API integrations. Hire Monish Roy for your next project.">
     <meta name="keywords"
-        content="Monish Roy, Laravel Developer, PHP Expert, Full Stack Web Developer, Custom ERP Software, HRM Solutions, Freelance Web Developer, Hire Laravel Developer, Bangladeshi PHP Developer, Backend Specialist, API Development, Experienced Programmer, Portfolio Monish Roy">
+        content="Monish Roy, monishroy.com, Laravel Developer Bangladesh, PHP Developer, Full Stack Web Developer, Custom ERP Software, HRM Solutions, Freelance Laravel Developer, Hire Laravel Developer, Bangladeshi PHP Developer, Backend Specialist, API Development, Software Engineer Bangladesh, Portfolio Monish Roy, Monish Roy Developer">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="canonical" href="https://monishroy.com/">
 
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <meta name="author" content="Monish Roy">
     <meta name="publisher" content="Monish Roy">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="geo.region" content="BD">
+    <meta name="geo.placename" content="Dhaka, Bangladesh">
 
-    <meta property="og:title" content="Monish Roy - Software Developer">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Monish Roy – PHP & Laravel Developer | monishroy.com">
     <meta property="og:description"
-        content="Portfolio of Monish Roy, a professional Software Developer specializing in full-stack development.">
-    <meta property="og:image" content="assets/images/home-page.jpg">
+        content="Monish Roy is a professional PHP & Laravel Developer from Bangladesh, specializing in full-stack web development, ERP systems, and API integrations.">
+    <meta property="og:image" content="https://monishroy.com/assets/images/monishroy.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:alt" content="Monish Roy – PHP & Laravel Developer">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:url" content="https://monishroy.com/">
     <meta property="og:site_name" content="Monish Roy">
     <meta property="og:type" content="website">
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="assets/images/home-page.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://monishroy.com/assets/images/monishroy.jpg">
+    <meta name="twitter:image:alt" content="Monish Roy – PHP & Laravel Developer">
     <meta name="twitter:site" content="@monishroy010">
     <meta name="twitter:creator" content="@monishroy010">
-    <meta name="twitter:title" content="Monish Roy - Software Developer">
+    <meta name="twitter:title" content="Monish Roy – PHP & Laravel Developer">
     <meta name="twitter:description"
-        content="Portfolio of Monish Roy, a professional Software Developer specializing in full-stack development.">
-    <link rel="image_src" href="https://monishroy.com/assets/images/home-page.jpg" />
+        content="Monish Roy is a professional PHP & Laravel Developer from Bangladesh, specializing in full-stack web development, ERP systems, and API integrations.">
+    <link rel="image_src" href="https://monishroy.com/assets/images/monishroy.jpg">
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" as="image" href="assets/images/monishroy.jpg" fetchpriority="high">
 
     <!--- favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -66,10 +83,31 @@
           "@type": "Person",
           "@id": "https://monishroy.com/#person",
           "name": "Monish Roy",
-          "jobTitle": "Software Developer",
-          "description": "Monish Roy is a skilled Software Developer specializing in PHP and Laravel development.",
+          "alternateName": ["monishroy", "monishroy010"],
+          "jobTitle": "PHP & Laravel Developer",
+          "description": "Monish Roy is a professional PHP and Laravel developer from Bangladesh, specializing in full-stack web development, ERP systems, HRM solutions, and API integrations.",
           "url": "https://monishroy.com/",
-          "image": "https://monishroy.com/assets/images/monishroy.jpg",
+          "image": {
+            "@type": "ImageObject",
+            "@id": "https://monishroy.com/#personimage",
+            "url": "https://monishroy.com/assets/images/monishroy.jpg",
+            "contentUrl": "https://monishroy.com/assets/images/monishroy.jpg",
+            "caption": "Monish Roy – PHP & Laravel Developer",
+            "representativeOfPage": true,
+            "width": 800,
+            "height": 800
+          },
+          "email": "monishroydev@gmail.com",
+          "telephone": "+8801580487212",
+          "nationality": {
+            "@type": "Country",
+            "name": "Bangladesh"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dhaka",
+            "addressCountry": "BD"
+          },
           "sameAs": [
             "https://twitter.com/monishroy010",
             "https://www.facebook.com/monishroy010",
@@ -78,17 +116,27 @@
             "https://www.youtube.com/@monishroyprogrammer",
             "https://github.com/monishroy"
           ],
-          "knowsAbout": ["PHP", "Laravel", "Web Development", "Software Engineering", "API Integration"],
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Northern University Bangladesh"
+          "knowsAbout": ["PHP", "Laravel", "MySQL", "JavaScript", "Web Development", "Software Engineering", "API Integration", "ERP Systems", "HRM Software"],
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Northern University Bangladesh"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Rangpur Ideal Institute of Technology"
+            }
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Smart Software LTD."
           }
         },
         {
           "@type": "WebSite",
           "@id": "https://monishroy.com/#website",
           "url": "https://monishroy.com/",
-          "name": "Monish Roy – Software Developer",
+          "name": "Monish Roy – PHP & Laravel Developer",
           "publisher": { "@id": "https://monishroy.com/#person" },
           "inLanguage": "en-US"
         },
@@ -96,10 +144,35 @@
           "@type": "WebPage",
           "@id": "https://monishroy.com/#webpage",
           "url": "https://monishroy.com/",
-          "name": "Monish Roy Portfolio",
+          "name": "Monish Roy – PHP & Laravel Developer Portfolio",
           "isPartOf": { "@id": "https://monishroy.com/#website" },
           "about": { "@id": "https://monishroy.com/#person" },
-          "description": "Official portfolio of Monish Roy, featuring expert PHP and Laravel development projects and services."
+          "description": "Official portfolio of Monish Roy, a PHP & Laravel developer from Bangladesh, featuring expert web development projects, ERP systems, HRM solutions, and services.",
+          "primaryImageOfPage": { "@id": "https://monishroy.com/#personimage" },
+          "dateModified": "2026-03-18T00:00:00+06:00"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://monishroy.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://monishroy.com/"
+            }
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://monishroy.com/#service",
+          "name": "Monish Roy – Freelance Laravel & PHP Development",
+          "url": "https://monishroy.com/",
+          "image": "https://monishroy.com/assets/images/monishroy.jpg",
+          "priceRange": "$$",
+          "provider": { "@id": "https://monishroy.com/#person" },
+          "areaServed": "Worldwide",
+          "serviceType": ["Laravel Development", "PHP Development", "ERP Software", "HRM Solutions", "API Integration"]
         }
       ]
     }
@@ -165,7 +238,9 @@
         .gradient-text {
             background: linear-gradient(to right, #3b82f6, #8b5cf6);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: transparent;
         }
 
         .blob {
@@ -332,15 +407,15 @@
                         <a href="https://github.com/monishroy" target="_blank" title="Go to Github Profile"
                             class="hover:text-primary-600 transition-colors"><i data-lucide="github"
                                 class="w-6 h-6"></i></a>
-                        <a href="https://www.linkedin.com/in/monishroy010/" target="_blank" title="Go to Linkedin Profile"
-                            class="hover:text-primary-600 transition-colors"><i data-lucide="linkedin"
-                                class="w-6 h-6"></i></a>
+                        <a href="https://www.linkedin.com/in/monishroy010/" target="_blank"
+                            title="Go to Linkedin Profile" class="hover:text-primary-600 transition-colors"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
                         <a href="https://twitter.com/monishroy010" target="_blank" title="Go to Twitter Profile (X)"
                             class="hover:text-primary-600 transition-colors"><i data-lucide="twitter"
                                 class="w-6 h-6"></i></a>
-                        <a href="https://www.instagram.com/monishroy010/" target="_blank" title="Go to Instagram Profile"
-                            class="hover:text-primary-600 transition-colors"><i data-lucide="instagram"
-                                class="w-6 h-6"></i></a>
+                        <a href="https://www.instagram.com/monishroy010/" target="_blank"
+                            title="Go to Instagram Profile" class="hover:text-primary-600 transition-colors"><i
+                                data-lucide="instagram" class="w-6 h-6"></i></a>
                     </div>
                 </div>
 
@@ -350,7 +425,11 @@
                         <div
                             class="absolute inset-0 bg-gradient-to-tr from-primary-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
                         </div>
-                        <img src="assets/images/monishroy.jpg" alt="Monish Roy" title="Monish Roy Profile Picture"
+                        <img src="assets/images/monishroy.jpg"
+                            alt="Monish Roy – PHP & Laravel Developer from Bangladesh"
+                            title="Monish Roy – PHP & Laravel Developer"
+                            width="600" height="600"
+                            fetchpriority="high"
                             class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
                     </div>
                     <!-- Stats Card -->
@@ -422,7 +501,11 @@
                     <div class="relative w-full max-w-md">
                         <div class="absolute top-4 -right-4 w-full h-full border-2 border-primary-600 rounded-2xl z-0">
                         </div>
-                        <img src="assets/images/about-monish.jpg" alt="About Monish Roy" title="About Monish Roy"
+                        <img src="assets/images/about-monish.jpg"
+                            alt="Monish Roy – Software Developer and PHP Laravel Expert"
+                            title="About Monish Roy"
+                            width="600" height="500"
+                            loading="lazy"
                             class="relative rounded-2xl shadow-xl z-10 w-full object-cover h-[500px]">
                     </div>
                 </div>
@@ -546,13 +629,16 @@
                 <div
                     class="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
                     <div class="relative overflow-hidden h-50">
-                        <img src="assets/images/hrm-dashboard.webp" alt="HRM Dashboard" title="HRM Dashboard"
+                        <img src="assets/images/hrm-dashboard.webp"
+                            alt="HRM Human Resource Management Dashboard – Laravel Project by Monish Roy"
+                            title="HRM Dashboard"
+                            width="600" height="400"
+                            loading="lazy"
                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div
                             class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <a href="https://www.hrmsoftwarebd.com/" target="_blank"
-                                title="HRM - Human Resource Management"
-                                class="p-2 rounded-full bg-white text-dark 
+                                title="HRM - Human Resource Management" class="p-2 rounded-full bg-white text-dark 
                                     dark:bg-gray-900 dark:text-white 
                                     hover:bg-primary-600 hover:text-white transition-colors"><i
                                     data-lucide="external-link" class="w-5 text-dark h-5"></i></a>
@@ -575,12 +661,15 @@
                     </div>
                 </div>
 
-                <!-- Project 1 -->
+                <!-- Project 2 -->
                 <div
                     class="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
                     <div class="relative overflow-hidden h-50">
-                        <img src="assets/images/sf-dashboard.webp" alt="SalesForce ERP Dashboard"
+                        <img src="assets/images/sf-dashboard.webp"
+                            alt="SalesForce ERP Dashboard – Laravel ERP System by Monish Roy"
                             title="SalesForce ERP Dashboard"
+                            width="600" height="400"
+                            loading="lazy"
                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div
                             class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
@@ -610,19 +699,22 @@
                     </div>
                 </div>
 
-                <!-- Project 1 -->
+                <!-- Project 3 -->
                 <div
                     class="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
                     <div class="relative overflow-hidden h-50">
-                        <img src="assets/images/codetap.webp" alt="CodeTap - Online Tools" title="CodeTap - Online Tools & JS Projects"
+                        <img src="assets/images/codetap.webp"
+                            alt="CodeTap Online Tools – Laravel PHP Project by Monish Roy"
+                            title="CodeTap - Online Tools & JS Projects"
+                            width="600" height="400"
+                            loading="lazy"
                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div
                             class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                            <a href="https://codetap.org/" target="_blank" title="CodeTap - Online Tools"
-                                class="p-2 rounded-full bg-white text-dark 
+                            <a href="https://codetap.org/" target="_blank" title="CodeTap - Online Tools" class="p-2 rounded-full bg-white text-dark 
                                     dark:bg-gray-900 dark:text-white 
-                                    hover:bg-primary-600 hover:text-white transition-colors"><i data-lucide="external-link"
-                                    class="w-5 h-5"></i></a>
+                                    hover:bg-primary-600 hover:text-white transition-colors"><i
+                                    data-lucide="external-link" class="w-5 h-5"></i></a>
                         </div>
                     </div>
                     <div class="p-6">
@@ -644,6 +736,42 @@
                     </div>
                 </div>
 
+                <!-- Project 4 -->
+                <div
+                    class="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-50">
+                        <img src="assets/images/expense.webp"
+                            alt="Expense – Private Finance Manager React App by Monish Roy"
+                            title="Expense - Private Finance Manager & Expense Tracker"
+                            width="600" height="400"
+                            loading="lazy"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <a href="https://expense.codetap.org/" target="_blank" title="CodeTap - Online Tools" class="p-2 rounded-full bg-white text-dark 
+                                                    dark:bg-gray-900 dark:text-white 
+                                                    hover:bg-primary-600 hover:text-white transition-colors"><i
+                                    data-lucide="external-link" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Expense - Private Finance
+                            Manager & Expense Tracker</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Expense is a simple, secure, and
+                            powerful personal finance manager designed to help users easily track and control their
+                            daily finances.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">React</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300">React Native</span>
+                            <span
+                                class="text-xs font-medium px-2.5 py-0.5 rounded bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">SqlLite DB</span>
+                            
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="mt-8 text-center md:hidden">
@@ -857,7 +985,8 @@
                         expertise in Laravel and PHP helped bring our project to life with clean, efficient, and
                         scalable code. Highly recommended!"</p>
                     <div class="flex items-center gap-4">
-                        <img src="assets/images/ayub.webp" alt="Client" title="Ayub Ali"
+                        <img src="assets/images/ayub.webp" alt="Ayub Ali – Software Engineer" title="Ayub Ali"
+                            width="40" height="40" loading="lazy"
                             class="w-10 h-10 rounded-full border-2 border-primary-400">
                         <div>
                             <h4 class="font-bold text-sm">Ayub Ali</h4>
@@ -877,7 +1006,8 @@
                     <p class="text-gray-100 mb-6 italic">"Great communication skills and technical expertise. He solved
                         complex backend issues we were facing for weeks."</p>
                     <div class="flex items-center gap-4">
-                        <img src="assets/images/arafat.webp" alt="Client" title="Arafat Islam"
+                        <img src="assets/images/arafat.webp" alt="Arafat Islam – Product Manager" title="Arafat Islam"
+                            width="40" height="40" loading="lazy"
                             class="w-10 h-10 rounded-full border-2 border-primary-400">
                         <div>
                             <h4 class="font-bold text-sm">Arafat Islam</h4>
@@ -899,7 +1029,8 @@
                         problem-solving skills and dedication make him a promising developer in the field. I highly
                         recommend him for any team looking for a skilled and motivated Laravel developer."</p>
                     <div class="flex items-center gap-4">
-                        <img src="assets/images/pavel.webp" alt="Client" title="Pavel Islam"
+                        <img src="assets/images/pavel.webp" alt="Pavel Islam – Founder, Web Xpress" title="Pavel Islam"
+                            width="40" height="40" loading="lazy"
                             class="w-10 h-10 rounded-full border-2 border-primary-400">
                         <div>
                             <h4 class="font-bold text-sm">Mr. Pavel Islam</h4>
@@ -962,17 +1093,19 @@
                     class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-800">
                     <form action="javascript:void(0)" id="contactForm"
                         class="space-y-6 bg-white dark:bg-gray-900 rounded-2xl">
-                    
+
                         <!-- Success Message -->
-                        <div id="successMsg" class="hidden p-4 bg-green-100 text-green-700 rounded-xl font-semibold text-center">
+                        <div id="successMsg"
+                            class="hidden p-4 bg-green-100 text-green-700 rounded-xl font-semibold text-center">
                             Message sent successfully!
                         </div>
-                    
+
                         <!-- Name & Email -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Name -->
                             <div>
-                                <label for="name" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                <label for="name"
+                                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                     Name <span class="text-red-500">*</span>
                                 </label>
                                 <input type="text" id="name" name="name"
@@ -980,10 +1113,11 @@
                                     placeholder="John Doe">
                                 <p id="error-name" class="text-red-500 text-sm mt-1 hidden"></p>
                             </div>
-                    
+
                             <!-- Email -->
                             <div>
-                                <label for="email" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                <label for="email"
+                                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                     Email <span class="text-red-500">*</span>
                                 </label>
                                 <input type="email" id="email" name="email"
@@ -992,10 +1126,11 @@
                                 <p id="error-email" class="text-red-500 text-sm mt-1 hidden"></p>
                             </div>
                         </div>
-                    
+
                         <!-- Subject -->
                         <div>
-                            <label for="subject" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                            <label for="subject"
+                                class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                 Subject <span class="text-red-500">*</span>
                             </label>
                             <input type="text" id="subject" name="subject"
@@ -1003,10 +1138,11 @@
                                 placeholder="Project Inquiry">
                             <p id="error-subject" class="text-red-500 text-sm mt-1 hidden"></p>
                         </div>
-                    
+
                         <!-- Message -->
                         <div>
-                            <label for="message" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                            <label for="message"
+                                class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                 Message <span class="text-red-500">*</span>
                             </label>
                             <textarea id="message" name="message" rows="5"
@@ -1014,18 +1150,20 @@
                                 placeholder="Tell me about your project..."></textarea>
                             <p id="error-message" class="text-red-500 text-sm mt-1 hidden"></p>
                         </div>
-                    
+
                         <!-- Submit Button -->
                         <button type="submit" id="submitBtn"
                             class="flex items-center justify-center gap-2 w-full py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-primary-500/40 transform hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed">
-                    
+
                             <span id="btnText">Send Message</span>
-                    
+
                             <!-- Loader -->
-                            <svg id="btnLoader" class="hidden w-5 h-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24">
-                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                            <svg id="btnLoader" class="hidden w-5 h-5 animate-spin text-white"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                    stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z">
+                                </path>
                             </svg>
                         </button>
                     </form>
@@ -1064,11 +1202,13 @@
                     <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
                         <li><a href="https://github.com/monishroy" target="_blank" title="Go to Github Profile"
                                 class="hover:text-primary-600 transition-colors">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/monishroy010/" target="_blank" title="Go to Linkedin Profile"
+                        <li><a href="https://www.linkedin.com/in/monishroy010/" target="_blank"
+                                title="Go to Linkedin Profile"
                                 class="hover:text-primary-600 transition-colors">LinkedIn</a></li>
                         <li><a href="https://twitter.com/monishroy010" target="_blank" title="Go to Twitter Profile"
                                 class="hover:text-primary-600 transition-colors">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/monishroy010/" target="_blank" title="Go to Instagram Profile"
+                        <li><a href="https://www.instagram.com/monishroy010/" target="_blank"
+                                title="Go to Instagram Profile"
                                 class="hover:text-primary-600 transition-colors">Instagram</a></li>
                     </ul>
                 </div>
@@ -1203,27 +1343,27 @@
                     method: "POST",
                     body: data
                 })
-                .then(res => res.json())
-                .then(response => {
-                    if (response.errors) {
-                        // Laravel validation errors
-                        Object.keys(response.errors).forEach(key => {
-                            showError(key, response.errors[key][0]);
-                        });
-                    } else {
-                        successMsg.classList.remove("hidden");
-                        btnText.innerText = "Send";
-                        form.reset();
-                    }
-                })
-                .catch(() => {
-                    alert("Something went wrong!");
-                })
-                .finally(() => {
-                    btn.disabled = false;
-                    btnLoader.classList.add("hidden");
-                    setTimeout(() => btnText.innerText = "Send Message", 2000);
-                });
+                    .then(res => res.json())
+                    .then(response => {
+                        if (response.errors) {
+                            // Laravel validation errors
+                            Object.keys(response.errors).forEach(key => {
+                                showError(key, response.errors[key][0]);
+                            });
+                        } else {
+                            successMsg.classList.remove("hidden");
+                            btnText.innerText = "Send";
+                            form.reset();
+                        }
+                    })
+                    .catch(() => {
+                        alert("Something went wrong!");
+                    })
+                    .finally(() => {
+                        btn.disabled = false;
+                        btnLoader.classList.add("hidden");
+                        setTimeout(() => btnText.innerText = "Send Message", 2000);
+                    });
             });
         });
     </script>
